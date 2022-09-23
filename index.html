@@ -13,7 +13,12 @@
     <!-- Logo -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <script>
-        console.log("Hola mundo-saoko")
+        console.log("Hola mundo-saoko");
+        
+        function colorTitulo(){
+            console.log("Pulso el botón de Generation");
+            document.getElementById("generation").style.color = "#198754";
+        }
     </script>
 </head>
 
@@ -64,12 +69,12 @@
         <!-- Descripción Generation -->
         <div class="row">
             <div>
-                <h1>Estar en Generation es...</h1>
+                <h1>Estar en <span id="generation">Generation</span> es...</h1>
                 <p>
                     Toda una experiencia y es lo mejor cuando es viernes tematico.
                 </p>
-                <p>
-                    <a href="https://mexico.generation.org/" target="_blank" class="btn btn-success"><i class="fa-sharp fa-solid fa-landmark"></i> Visita Generation</a>
+                <p onclick="colorTitulo()">
+                    <a href="#" target="" class="btn btn-success"><i class="fa-sharp fa-solid fa-landmark"></i> Visita Generation</a>
                 </p>
             </div>
         </div>
